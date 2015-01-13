@@ -1,0 +1,117 @@
+h1,h2,h3 {
+	text-align: center;
+}
+h1{
+	font-size: 3em;
+	color: #16a085;
+}
+h2 {
+	background-color: #16a085;
+	color:#fff;
+	padding: 0.5em 0;
+}
+h3 {
+	font-size: 1.2em;
+	color: #1abc9c;
+}
+.tabs {
+    position: relative;
+    margin: 1em 0 2em;
+    width: 100%;
+    min-width: 450px;
+    overflow: hidden;
+}
+/* Tabs nav */
+.tabs nav {
+    text-align: center;
+}
+.tabs nav ul {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.tabs nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 0 0.3em;
+    border: 1px solid #bdc3c7;
+    border-bottom: none;
+}
+.tabs nav li.tab-active {
+    border: 1px solid #16a085;
+    border-top: 4px solid #16a085;
+    border-bottom: none;
+}
+.tabs nav li.tab-active:before, .tabs nav li.tab-active:after {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 1px;
+    right: 100%;
+    bottom: 0;
+    background: #16a085;
+}
+.tabs nav li.tab-active:after {
+    right: auto;
+    left: 100%;
+}
+.tabs nav a {
+    color: #bdc3c7;
+    display: block;
+    font-size: 1.45em;
+    line-height: 2.5;
+    padding: 0 2.5em;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.tabs nav a:hover {
+    color: #768e9d;
+}
+.tabs nav li.tab-active a {
+    color: #16a085;
+}
+ 
+/* Tabs content */
+.content section {
+	text-align: center;
+    margin:auto;
+    padding: 2em 1em;
+    max-width: 650px;
+    display: none;
+}
+.content section.content-active {
+    display: block;
+}
+.infobox {
+	border-top: 1px solid #afafaf;
+	padding-bottom: 5px;
+}
+.infobox p {
+	margin: 10px 0;
+    font-size: 1.1em;
+}
+.infobox a {
+	color: #1abc9c;
+}
+.infobox a:hover{
+	color: #16a085
+}
+
+/* media query for small screens */
+@media screen and (max-width: 800px) {
+    .tabs nav ul,
+    .tabs nav ul li a {
+        width: 100%;
+        padding: 0;
+    }
+    .tabs nav ul li {
+        width: 33%;
+        margin: 0;
+        border-right: none;
+    }    
+    .tabs nav ul li:last-child {
+        border-right: none;
+    }
+}

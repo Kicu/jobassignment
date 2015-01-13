@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Feeds App</title>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" href="/stylesheets/normalize.css" />
+        <link rel="stylesheet" href="/stylesheets/app.css" />
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Your feeds!</h1>        
+            <div class="tabs">
+                <nav>
+                    <ul>
+                        <li class="tab tab-active"><a href="#varnish" >Varnish</a></li>
+                        <li class="tab"><a href="#rss" >RSS feed</a></li>
+                        <li class="tab"><a href="#json" >JSON feed</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <section id="varnish-tab" class="content-active">
+                        <h2>Varnish log</h2>
+                        <div id="varnish-data">
+                            <img src="/images/ajax_loader.gif">
+                        </div>
+                    </section>
+                    <section id="rss-tab">
+                        <h2>RSS feed</h2>
+                        <div id="rss-data">
+                            <img src="/images/ajax_loader.gif">
+                        </div>
+                    </section>
+                    <section id="json-tab">
+                        <h2>JSON feed</h2>
+                        <div id="json-data">
+                            <img src="/images/ajax_loader.gif">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="/javascripts/mustache.min.js"></script>
+        <script src="/javascripts/app.js"></script>
+        <script src="/javascripts/main.js"></script>
+    </body>
+</html>
